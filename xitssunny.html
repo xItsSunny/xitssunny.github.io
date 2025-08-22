@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xItsSunny</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: linear-gradient(180deg, #001f3f, #000814, #001f3f, #0a0a2a, #000);
+          color: white;
+          text-align: center;
+          min-height: 100vh;
+          position: relative;
+          overflow-x: hidden;
+        }
+
+        header {
+          padding: 3rem 1rem;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+          margin-bottom: 0.5rem;
+          display: inline-block;
+          transition: transform 0.3s ease;
+        }
+
+        h1:hover {
+          transform: scale(1.1);
+        }
+
+        h2 {
+          margin: 4rem 0 2rem;
+          font-size: 2rem;
+        }
+
+        .languages, .projects {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 2rem;
+          padding: 2rem;
+        }
+
+        .card {
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 16px;
+          padding: 1.5rem;
+          width: 220px;
+          backdrop-filter: blur(12px);
+          transition: all 0.3s ease;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          color: white;
+          text-align: center;
+        }
+
+        .card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 0 25px #001f3f;
+        }
+
+        .card img {
+          width: 75px;
+          height: 75px;
+          margin-bottom: 0.75rem;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 12px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img:hover {
+          transform: scale(1.2);
+        }
+
+        .card p {
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: bold;
+        }
+
+        .project-desc {
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 0.9rem;
+          margin-top: 0.5rem;
+        }
+
+        .github-btn {
+          display: inline-block;
+          margin: 4rem 0;
+          padding: 1rem 2.5rem;
+          background: rgba(255, 255, 255, 0.08);
+          color: white;
+          font-size: 1.2rem;
+          border-radius: 12px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          backdrop-filter: blur(12px);
+          box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        .github-btn:hover {
+          box-shadow: 0 0 25px #001f3f;
+        }
+
+        .card.java:hover { background: #b07219; box-shadow: 0 0 20px #b07219; }
+        .card.kotlin:hover { background: #A97BFF; box-shadow: 0 0 20px #A97BFF; }
+        .card.cpp:hover { background: #f34b7d; box-shadow: 0 0 20px #f34b7d; }
+        .card.python:hover { background: #3572A5; box-shadow: 0 0 20px #3572A5; }
+        .card.html:hover { background: #e34c26; box-shadow: 0 0 20px #e34c26; }
+        .card.css:hover { background: #563d7c; box-shadow: 0 0 20px #563d7c; }
+
+        .card.java img:hover { box-shadow: 0 0 20px #b07219; }
+        .card.kotlin img:hover { box-shadow: 0 0 20px #A97BFF; }
+        .card.cpp img:hover { box-shadow: 0 0 20px #f34b7d; }
+        .card.python img:hover { box-shadow: 0 0 20px #3572A5; }
+        .card.html img:hover { box-shadow: 0 0 20px #e34c26; }
+        .card.css img:hover { box-shadow: 0 0 20px #563d7c; }
+
+        .java { color: #b07219; }
+        .kotlin { color: #A97BFF; }
+        .cpp { color: #f34b7d; }
+        .python { color: #3572A5; }
+        .html { color: #e34c26; }
+        .css { color: #563d7c; }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>xItsSunny's Portfolio</h1>
+    <p>PLACEHOLDER</p>
+</header>
+
+<section>
+    <h2>Coding Languages</h2>
+    <div class="languages">
+        <div class="card java"><img src="java.png" alt="Java"><p>Java</p></div>
+        <div class="card kotlin"><img src="kotlin.png" alt="Kotlin"><p>Kotlin</p></div>
+        <div class="card cpp"><img src="c++.png" alt="C++"><p>C++</p></div>
+        <div class="card python"><img src="python.png" alt="Python"><p>Python</p></div>
+        <div class="card html"><img src="html.png" alt="HTML"><p>HTML</p></div>
+        <div class="card css"><img src="css.png" alt="CSS"><p>CSS</p></div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <p><strong>Project 1</strong></p>
+            <p><span class="java">Java</span>, <span class="kotlin">Kotlin</span></p>
+            <p class="project-desc">PLACEHOLDER</p>
+        </div>
+        <div class="card">
+            <p><strong>Project 2</strong></p>
+            <p><span class="python">Python</span>, <span class="html">HTML</span>, <span class="css">CSS</span></p>
+            <p class="project-desc">PLACEHOLDER</p>
+        </div>
+        <div class="card">
+            <p><strong>Project 3</strong></p>
+            <p><span class="cpp">C++</span>, <span class="java">Java</span></p>
+            <p class="project-desc">PLACEHOLDER</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <a href="https://github.com/xItsSunny" target="_blank" class="github-btn">Visit My GitHub</a>
+</footer>
+</body>
+</html>
